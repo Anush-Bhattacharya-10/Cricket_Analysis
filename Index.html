@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cricket Stats</title>
+  <script src="scripts.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Cricket Stats</h1>
+    <div class="graph-container">
+      <canvas class="line-chart"></canvas>
+    </div>
+    <div class="stats-container">
+      <button class="stats" id="0">No. of 0s: </button>
+      <label for="0">0</label>
+      <button class="stats" id="1">No. of 1s: </button>
+      <label for="1">0</label>
+      <button class="stats" id="2">No. of 2s: </button>
+      <label for="2">0</label>
+      <button class="stats" id="3">No. of 3s: </button>
+      <label for="3">0</label>
+      <button class="stats" id="4">No. of 4s: </button>
+      <label for="4">0</label>
+      <button class="stats" id="5">No. of 6s: </button>
+      <label for="6">0</label>
+      <button class="stats" id="wide">No. of wides: </button>
+      <label for="wide">0</label>
+      <button class="stats" id="lb">No. of leg-byes: </button>
+      <label for="lb">0</label>
+      <button class="stats" id="nb">No. of no-balls: </button>
+      <label for="nb">0</label>
+      <button class="stats" id="b">No. of byes: </button>
+      <label for="b">0</label>
+    </div>
+    <div class="stats-container">
+      <div class="run-rate">
+        <h2>Run Rate</h2>
+        <p id="rr">0.0</p>
+      </div>
+
+      <div class="predicted-score">
+        <h2>Predicted Score</h2>
+        <p id="ps">0</p>
+      </div>
+    </div>
+  </div>
+  <h1>Cricket Stats Input</h1>
+
+  <div class="input-fields">
+    <label for="runs">Runs Scored:</label>
+    <input type="number" id="runs" placeholder="Enter runs">
+
+    <label for="overs">Overs Played:</label>
+    <input type="number" id="overs" placeholder="Enter overs">
+    <button id="update-graph">Update Graph</button>
+</body>
+</html>
